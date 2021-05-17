@@ -76,15 +76,12 @@ footer li {
   display: inline-block;
   margin: 5px;
 }
-.intro_2 ul {
-  flex: 1;
-}
 
 .intro_2 {
-  justify-content: space-between;
+  justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 8%;
+  background-color: antiquewhite;
 }
 .intro_2 img {
   border-radius: 20%;
@@ -93,7 +90,7 @@ footer li {
   max-width: 50%;
   max-height: 50%;
   max-width: 600px;
-  margin-right: 15%;
+  margin-right: 5%;
 }
 footer {
   margin-top: 10px;
@@ -109,11 +106,16 @@ main a {
   background-color: rgb(248, 248, 248);
 }
 .view_our_guitars div {
+  flex-flow: row;
+  flex-wrap: wrap;
   display: flex;
-  justify-content: space-around;
+  justify-content: left;
 }
 .view_our_guitars div div {
   display: block;
+  margin: auto;
+  padding: 10px;
+  margin: 2%;
 }
 .view_our_guitars img {
   max-width: 357px;
