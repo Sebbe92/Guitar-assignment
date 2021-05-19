@@ -2,12 +2,60 @@
   font-family: "BootsAndSpurs";
   src: url(/fonts/BootsAndSpurs.ttf);
 }
+/*all*/
 html body {
   padding: 0;
   margin: 0;
 }
-li {
-  font-size: 35px;
+body {
+  font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
+}
+h1,
+h2,
+.logo {
+  font-family: "BootsAndSpurs";
+  font-size: 2.8em;
+}
+h3 {
+  font-size: 1.5em;
+  font-family: "Roboto", sans-serif;
+}
+p {
+  font-size: 1.9em;
+  margin: 10px;
+  font-family: "Roboto", sans-serif;
+}
+a {
+  color: aliceblue;
+  margin: 10px;
+  font-size: 1.55em;
+  text-decoration: none;
+}
+
+/*header*/
+header {
+  align-items: center;
+}
+.current {
+  text-decoration: underline;
+}
+header,
+footer {
+  display: flex;
+  background-color: rgb(32, 32, 32);
+}
+header li :hover {
+  text-decoration: underline;
+}
+header li,
+footer li {
+  display: inline-block;
+  margin: 5px;
+}
+/*main*/
+
+main li {
+  font-size: 1.9em;
 }
 .intro {
   padding: 20px;
@@ -24,66 +72,15 @@ li {
   margin-top: 5%;
   margin-left: 7%;
 }
-.intro div a {
-  text-transform: uppercase;
-  padding: 3% 17% 2% 16%;
-}
-body {
-  font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
-}
-h1,
-h2,
-.logo {
-  font-family: "BootsAndSpurs";
-  font-size: 40px;
-}
-.logo {
-  font-size: 45px;
-}
-
-h3 {
-  font-size: 23px;
-  font-family: "Roboto", sans-serif;
-}
-
-p {
-  font-size: 30px;
-  margin: 10px;
-  font-family: "Roboto", sans-serif;
-}
-a {
-  color: aliceblue;
-  margin: 10px;
-  font-size: 25px;
-}
-header,
-footer {
-  display: flex;
-  background-color: rgb(32, 32, 32);
-}
-header {
-  align-items: center;
-}
-header li :hover {
-  text-decoration: underline;
-}
-header a {
-  font-size: 30px;
-  text-decoration: none;
-}
-header li,
-footer li {
-  display: inline-block;
-  margin: 5px;
-}
 
 .intro_2 {
   justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
-  background-color: antiquewhite;
 }
 .intro_2 img {
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 20%;
   min-width: 20%;
   min-height: 20%;
@@ -92,56 +89,16 @@ footer li {
   max-width: 600px;
   margin-right: 5%;
 }
-footer {
-  margin-top: 10px;
-}
-
-main a {
-  background-color: rgb(187, 0, 0);
-  border-radius: 5px;
-  padding: 5px;
-  text-decoration: none;
-}
-.view_our_guitars {
-  background-color: rgb(248, 248, 248);
-}
-.view_our_guitars div {
-  flex-flow: row;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: left;
-}
-.view_our_guitars div div {
-  display: block;
-  margin: auto;
-  padding: 10px;
-  margin: 2%;
-}
-.view_our_guitars img {
-  max-width: 357px;
-}
-
-.on_sale a {
-  background-color: green;
-}
-.on_sale a:hover {
-  background-color: lightgreen;
-}
-main a:hover {
-  background-color: lightcoral;
-}
-
 .reviews {
   background-color: rgb(211, 211, 211);
   margin-top: 50px;
   margin-bottom: 50px;
   padding: 10px;
 }
-.reviews img {
-  border-radius: 50%;
-  height: 70px;
-  width: 70px;
-  margin: 25px;
+.reviews div div {
+  justify-content: start;
+  margin: 20px;
+  width: 600px;
 }
 .reviews h2 {
   text-align: center;
@@ -151,8 +108,71 @@ main a:hover {
   display: flex;
   flex-wrap: wrap;
 }
-.reviews div div {
-  justify-content: start;
-  margin: 20px;
-  width: 600px;
+.reviews img {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  margin: 25px;
 }
+
+.view_our_guitars div,
+.browse div {
+  flex-flow: row;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+.view_our_guitars div div,
+.browse div div {
+  display: block;
+  margin: auto;
+  padding: 5px;
+  margin: 5px;
+}
+.view_our_guitars img,
+.browse img {
+  max-width: 357px;
+}
+.view_our_guitars h2 {
+  text-align: center;
+}
+.browse {
+  width: 70%;
+  margin: 0 auto;
+}
+.browse h1 {
+  text-align: center;
+}
+.form__input {
+  display: block;
+}
+
+/*footer*/
+footer {
+  margin-top: 10px;
+}
+/*buttons*/
+main a {
+  background-color: rgb(187, 0, 0);
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+}
+.intro div a {
+  text-transform: uppercase;
+  padding: 3% 17% 2% 16%;
+}
+#send-btn {
+  background-color: green;
+  padding: 10px 20px 10px 20px;
+}
+.on_sale a {
+  background-color: green;
+}
+.on_sale a:hover {
+  background-color: lightgreen;
+}
+main a:hover {
+  background-color: lightcoral;
+}
+/*new*/
