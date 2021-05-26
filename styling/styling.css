@@ -150,7 +150,7 @@ main h1 {
 }
 
 fieldset {
-  width: 99%;
+  width: 80%;
   min-height: 435px;
   margin: 0 auto;
   display: flex;
@@ -159,7 +159,6 @@ fieldset {
   border: none;
 }
 .flex_container {
-  background-color: azure;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
