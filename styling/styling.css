@@ -3,7 +3,8 @@
   src: url(/fonts/BootsAndSpurs.ttf);
 }
 /*all*/
-html body {
+html,
+body {
   padding: 0;
   margin: 0;
 }
@@ -16,7 +17,8 @@ h2,
   font-family: "BootsAndSpurs";
   font-size: 2.8em;
 }
-h3 {
+h3,
+#send_btn {
   font-size: 1.5em;
   font-family: "Roboto", sans-serif;
 }
@@ -133,7 +135,7 @@ main li {
 .browse img {
   max-width: 357px;
 }
-.view_our_guitars h2 {
+main h1 {
   text-align: center;
 }
 .browse {
@@ -143,8 +145,60 @@ main li {
 .browse h1 {
   text-align: center;
 }
+.contact_h1 {
+  margin-top: 5%;
+}
+
+fieldset {
+  width: 99%;
+  min-height: 435px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: none;
+}
+.flex_container {
+  background-color: azure;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  vertical-align: middle;
+}
+.grid_left,
+.grid_right,
+.grid_bottom {
+  padding: 1%;
+}
+.grid_bottom {
+  display: flex;
+  justify-content: center;
+}
 .form__input {
   display: block;
+  width: 333px;
+  height: 47px;
+  border-radius: 8px;
+  border: 1px solid grey;
+  margin: 3% 0;
+}
+
+.checkbox_container {
+  display: flex;
+}
+.checkbox_label {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+#sign_up_email {
+  width: 26px;
+  height: 26px;
+  background-color: blue;
+}
+
+#message {
+  height: 230px;
+  resize: none;
 }
 
 /*footer*/
@@ -153,6 +207,7 @@ footer {
 }
 /*buttons*/
 main a {
+  margin-top: 10px;
   background-color: rgb(187, 0, 0);
   border-radius: 5px;
   padding: 5px;
@@ -162,9 +217,11 @@ main a {
   text-transform: uppercase;
   padding: 3% 17% 2% 16%;
 }
-#send-btn {
-  background-color: green;
-  padding: 10px 20px 10px 20px;
+#send_btn {
+  background-color: red;
+  color: white;
+  text-transform: uppercase;
+  width: 365px;
 }
 .on_sale a {
   background-color: green;
